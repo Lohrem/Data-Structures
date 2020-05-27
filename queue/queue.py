@@ -30,9 +30,9 @@ class Queue:
     def dequeue(self):
         if not self.size:
             return None
-        the_value_that_was_taken_out_comma_yes_this_is_a_really_long_variable_name_because_im_bored_comma_anyways = self.storage.remove_from_head()
         self.size -= 1
-        return the_value_that_was_taken_out_comma_yes_this_is_a_really_long_variable_name_because_im_bored_comma_anyways
+        the_value_that_was_taken_out = self.storage.remove_from_head()
+        return the_value_that_was_taken_out
 
 # class Queue:
 #     def __init__(self):

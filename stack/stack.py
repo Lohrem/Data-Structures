@@ -14,7 +14,6 @@ import sys
 sys.path.append('../doubly_linked_list')
 from doubly_linked_list import DoublyLinkedList
 
-
 class Stack:
     def __init__(self):
         self.storage = DoublyLinkedList()
@@ -32,9 +31,9 @@ class Stack:
             return None
         self.size -= 1
 
-        the_value_that_was_taken_out_comma_yes_this_is_a_really_long_variable_name_because_im_bored_comma_anyways = self.storage.remove_from_tail()
+        the_value_that_was_taken_out = self.storage.remove_from_tail()
 
-        return the_value_that_was_taken_out_comma_yes_this_is_a_really_long_variable_name_because_im_bored_comma_anyways
+        return the_value_that_was_taken_out
 
 # class Stack:
 #     def __init__(self):
